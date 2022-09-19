@@ -1,0 +1,22 @@
+main {
+  text-align: center;
+  background-color: #e0d0c1;
+  background-blend-mode: lighten;
+  max-width: 500px;
+  margin: 20px auto;
+  border-radius: 45px;
+  box-shadow: 10px 10px rgba(0, 0, 0, 0.5);
+  color: #000000;
+}
+body {
+  text-align: center;
+  background: #3a3240;
+  color: white;
+}
+input, textarea, select, button {
+  background: #3a3240;
+  color: white;
+}
+a {
+  color: white;
+}
