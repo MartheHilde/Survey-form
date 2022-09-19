@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Survey Form</title>
+    <p id="description">This is a survey form conducted for all the ice-cream lovers. No information will be stored after the end of the surveys competitional terms. Sign up for the chance to win free ice-cream!(And thanks for the contributor of this code as I managed to delete my whole survey)</p>
+  </head>
+  <body>
+    <h1>Survey Form</h1>
+    <main id="main">
+      <h1 id="title">Ice-Cream survey!</h1>
+      <p id="description">
+        Enter your information here to help us further our people's ice-cream habits and for the chance to win a voucher for free ice-cream!
+      </p>
+      <form id="survey-form" action="#">
+        <label for="name" id="name-label"
+          ><p>Name:</p>
+          <input type="text" id="name" placeholder="e.g. Willy Wonka" required />
+        </label>
+        <label for="email" id="email-label"
+          ><p>Email:</p>
+          <input
+            type="email"
+            id="email"
+            placeholder="e.g. willywonka@email.com"
+            required
+          />
+        </label>
+        <label for="age" id="number-label"
+          ><p>Age<em>(optional)</em>:</p>
+          <input
+            type="number"
+            id="number"
+            placeholder="e.g. 18"
+            min="18"
+            max="99"
+          />
+        </label>
+        <label for="taste" id="taste-label"
+          ><p>What flavor is your favourite?</p>
+          <select id="dropdown">
+            <option selected disabled hidden></option>
+            <option id="Choclate">Chocolate</option>
+            <option id="Vanilla">Vanilla</option>
+            <option id="Tiramisu">Tiramisu</option>
+            <option id="Vino">Vino</option>
+          </select>
+        </label>
+        <p>What is your favorite ice-cream brand?</p>
+        <label for="haagen-dazs">
+          <input
+            id="haagen-dazs"
+            type="radio"
+            name="favorite"
+            value="hagen-dazs"
+          />Hagen-Dazs!
+        </label>
+        <label for="magnum">
+          <input
+            id="magnum"
+            type="radio"
+            name="favorite"
+            value="magnum"
+          />Magnum!
+        </label>
+        <label for="hennig-olsen">
+          <input id="hennig-olsen" type="radio" name="favorite" value="hennig-olsen" />Hennig Olsen!
+        </label>
+        <p>What information would you like to receive from us?</p>
+        <label for="newsletter">
+          <input
+            id="newsletter"
+            type="checkbox"
+            name="communications"
+            value="newsletter"
+          />Newsletter
+        </label>
+        <label for="tasting-events">
+          <input
+            id="tasting-events"
+            type="checkbox"
+            name="communications"
+            value="tasting-events"
+          />Tasting events
+        </label>
+        <label for="questionnaries">
+          <input
+            id="questionnaries"
+            type="checkbox"
+            name="communications"
+            value="questionnaries"
+          />Questionnaries
+        </label>
+        <p>Any other information you would like to share?</p>
+        <textarea id="additional-information" rows="4" cols="50">
+You can provide comments, suggestions, or feedback here.</textarea
+        >
+        <p>
+          <em
+            >Please note: This form is a proof of concept. Submitting the form
+            will not actually transmit your data.</em
+          >
+        </p>
+        <button type="Submit" id="submit">Submit</button>
+      </form>
+    </main>
+  </body>
+  <footer>
+    <a href="../">Return to Project List</a> |
+    <a href="https://www.nhcarrigan.com">Return to HomePage</a>
+  </footer>
+</html>
